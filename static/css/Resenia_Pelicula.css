@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+  font-family: 'Fredoka One', cursive;
+}
+.form-inline button{
+    color: white;
+    border: 1px solid black;
+}
+.form-inline button:hover{
+    background-color: rgb(2, 2, 112);
+    border: 1px solid white;
+
+}
