@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Reseña de Película</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+<link rel="stylesheet" href="{% static 'css/Resenia_Pelicula.css' %}">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165390515-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165390515-1');
+</script>
+</head>
+<body onload="myFunction()" id="body">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0960e2;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'img/ballena.png' %}" alt="" width="100px" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio de Sesión</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>    
+    </nav>
+</header>
+<div class="container-fluid bg-white text-dark" id="loader">
+    <div class="row d-flex flex-row justify-content-center align-items-center" style="min-height:500px;">
+        <div class="row">
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+        </div>   
+        
+    </div>       
+</div>
+
+
+<div class="container-fluid" style="display: none;" id="root">
+    <div class="row p-2">
+        <div class="col-md-4 justify-content-center bg-white border-right border-light p-4">
+            <div class="row justify-content-center">                
+                <img role="presentation" class="rounded mt-2" src="{% static 'img/madmax.jpg' %}"> 
+            </div>
+            <div class="row justify-content-center">                
+                <h3 class="tex-center text-dark"><b>Mad Max: Fury Road</b></h3>
+            </div>
+            <div class="row justify-content-center"> 
+                <h6 class="text-center">
+                    CATEGORIAS: 
+                    <span class="badge label badge-danger">Acción</span>
+                    <span class="badge badge-primary">Aventura</span>
+                    <span class="badge badge-warning">Sci-Fi</span>
+
+                </h3>
+            </div>
+            <hr/>
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-outline-primary">Añadir a una Lista</button>
+            </div>
+            <hr/>
+            
+           
+        </div>
+        <div class="col-md-8 bg-white text-secondary p-5">
+            <div class="row border-bottom border-muted">                  
+                <h4 class="text-uppercase"><i class="fa fa-film"></i> <b>Sinopsis:</b></h4>
+            </div>
+            <div class="row pt-3"> 
+                <p class="text-justify">
+                    In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search for her homeland with 
+                    the aid of a group of female prisoners, a psychotic worshiper, and a drifter named Max.</p>
+            </div> 
+            <div class="row border-bottom border-muted">
+                <h4><i class="fa fa-users"></i>
+                    <b class="text-uppercase">Ficha técnica</b>
+                </h4>
+            </div>
+            <div class="row pt-1">
+                <h5 class="text-dark"><b>Director: <a href="#" class="text-decoration-none text-dark"> <small>George Miller</small></a></b></h5>
+            </div>
+            
+            <div class="row">
+                <h5 class="text-dark"><b>Guionistas: <a href="#" class="text-decoration-none text-dark"><small> George Miller, Brendan McCarthy & Nick Lathouris</small></a></b></h5>
+            </div>
+            <div class="row">
+                <h5 class="text-dark"> <b> Año de estreno: <span class="badge badge-primary">2015</span></b></h6>
+            </div>
+            <div class="row">
+                <h5 class="text-dark"><b>Protagonistas: <a href="#" class="text-decoration-none text-dark"><small> Tom Hardy & Charlize Therom</small></a></b></h5>
+            </div>
+            <div class="row">
+                <h5 class="text-dark"><b>Duración: <a href="#" class="text-decoration-none text-dark"><small> 120 minutos</small></a></b></h5>
+            </div>
+            <div class="row">
+                <h5 class="text-dark"><b>Clasificación: <a href="#" class="text-decoration-none text-dark"><span class="badge badge-primary">R</span></a></b></h5>
+            </div>
+            <div class="row">
+                <h5 class="text-dark">Ganadora de 6 premios Oscar</h5>
+            </div>
+            <hr/>
+
+            <div class="row border-bottom border-muted">
+                <h4><i class="fa fa-play-circle"></i>
+                    <b class="text-uppercase">Tráiler</b>
+                </h4>
+            </div> 
+            <hr/>
+ 
+            <div>
+                <p style="text-align: center;">
+                    <iframe src="https://www.youtube.com/embed/hEJnMQG9ev8" width="545" height="405" frameborder="0" allowfullscreen="allowfullscreen">
+                        <span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span>
+                    </iframe>
+                </p>
+            </div>          
+        </div>            
+    </div>
+    </div>
+</div>
+  <script>
+    var myVar;    
+    function myFunction() {
+      document.getElementById("body").style.background = "#ffffff";
+      myVar = setTimeout(showPage, 2000);
+    }    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("root").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+      document.getElementById("body").style.background = "#f0f0f0";
+    }
+    </script>  
+</body>
+</html>

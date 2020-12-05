@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f52e6fe05b.js" crossorigin="anonymous"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="{% static 'css/Perfil.css' %}">
+
+
+</head>
+<!--
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+<body>
+	<header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0052ce;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/ballena.png" alt="" width="100px" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalogo <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Inicio de Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>    
+        </nav>
+    </header>
+	<div class="wrapper">
+		<div class="left">
+			<img src="https://i.imgur.com/cMy8V5j.png" alt="user" width="100">
+			<h4>Alex William</h4>
+			 <p>UI Developer</p>
+			 <button type="button" class="btn btn-outline-danger">Cerrar Sesion</button>
+		</div>
+		<div class="right">
+			<div class="info">
+				<h3>Information</h3>
+				<div class="info_data">
+					 <div class="data">
+						<h4>Email</h4>
+						<p>alex@gmail.com</p>
+					 </div>
+					 <div class="data">
+					   <h4>Phone</h4>
+						<p>0001-213-998761</p>
+				  </div>
+				</div>
+			</div>
+		  
+		  <div class="projects">
+				<h3>Projects</h3>
+				<div class="projects_data">
+					 <div class="data">
+						<h4>Recent</h4>
+						<p>Lorem ipsum dolor sit amet.</p>
+					 </div>
+					 <div class="data">
+					   <h4>Most Viewed</h4>
+						<p>dolor sit amet.</p>
+				  </div>
+				</div>
+			</div>
+		  
+			<div class="social_media">
+				<ul>	
+				  <button type="button" class="btn btn-outline-primary">Crear lista de Reproducción</button>
+                  <button type="button" class="btn btn-outline-danger">Ver Listas de Reproducción</button>
+                  <button type="button" class="btn btn-outline-dark">Eliminar Listas de Reproducción</button>
+			  </ul>
+		  </div>
+		</div>
+	</div>
+</body>
+</html>
