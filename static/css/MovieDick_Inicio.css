@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.form-inline button{
+    color: white;
+    border: 1px solid black;
+}
+.form-inline button:hover{
+    background-color: rgb(2, 2, 112);
+    border: 1px solid white;
+
+}
+.post {
+    margin: 10px auto;
+    color: #555;
+    padding: 10px;
+    border: 1px solid #fff;
+    box-shadow: inset 1px 2px 3px #bbb, 1px 1px 1px #fff;
+    width: 575px;
+}
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+*{
+  font-family: 'Fredoka One', cursive;
+}
+header div.navbar-collapse ul.ml-auto span.badge{
+    border-radius: 50%;
+}
+#carouselExampleIndicators{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.btn-info{
+    background-color: rgb(0, 105, 109);
+    border: rgb(14, 46, 136);
+}
+.btn-info:hover{
+    background-color: rgb(2, 126, 95);
+}
+.productos .card img{
+    border-bottom: 2px solid rgb(241, 7, 7);
+}
+.productos .card a:hover{
+    text-decoration: none!important;
+}
+.productos .card .card-title{
+    color: black;
+}
+.productos .card{
+    transition: all .3s ease;
+}
+.productos .card:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all .3s ease;
+}
+.categorias ul.list-group{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.categorias ul.list-group li.list-group-item:hover{
+    background-color: #c90a0a;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.productos .card .price_off{
+    font-size: 12px;
+    color: rgb(0, 95, 48);
+}
+.productos .card .card-text{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
