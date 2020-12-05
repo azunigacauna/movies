@@ -13,3 +13,9 @@ def categoria(request):
 
 def lista_pelicula(request):
     return render(request,'Lista_Peliculas.html')
+
+def ini_sesion(request):
+    return render(request,'inicio_sesion.html')
+
+def pagina_no_encontrada(request):
+    return render(request, 'pag_no_encontrada.html')
