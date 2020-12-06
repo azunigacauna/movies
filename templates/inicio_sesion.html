@@ -1,10 +1,11 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesion</title>
+    <title>{% trans 'SesionPagTitle' %}</title>
     <link rel="stylesheet" href="{% static 'css/Bootstrap/bootstrap.min.css' %}" >
     <script src="https://kit.fontawesome.com/f52e6fe05b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/MovieDick_Inicio.css' %}" >
@@ -25,16 +26,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">{% trans 'InicioNavbar' %}<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Catalogo</a>
+                            <a class="nav-link" href="#">{% trans 'CatalogoNavbar' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Categorias</a>
+                            <a href="#" class="nav-link">{% trans 'CategoriasNavbar' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Inicio de Sesión</a>
+                            <a href="#" class="nav-link">{% trans 'SesiónNavbar' %}</a>
                         </li>
                     </ul>
                 </div>
@@ -42,18 +43,18 @@
         </nav>
     </header>
     <div class="form">
-	  <h2>Inicio de sesion</h2>
+	  <h2>{% trans 'SesionTitle' %}</h2>
 	  <form class="content">
         <div class="container">
-          <label for="usuario"><b>Usuario</b></label>
-          <input type="text" placeholder="Ingrese Usuario" name="usuario" required>
-          <label for="contraseña"><b>Contraseña</b></label>
-          <input type="password" placeholder="Ingrese Contraseña" name="contraseña" required>
-          <button type="submit">Iniciar Sesión</button>
-          <span class="olvidar"><a href="#">¿Olvidaste tu contraseña?</a></span>
+          <label for="usuario"><b>{% trans 'UsuarioLbl' %}</b></label>
+          <input type="text" placeholder="{% trans 'UsuarioHolder' %}" name="usuario" required>
+          <label for="contraseña"><b>{% trans 'ContraseñaLbl' %}</b></label>
+          <input type="password" placeholder="{% trans 'ContraseñaHolder' %}" name="contraseña" required>
+          <button type="submit">{% trans 'IniBtn' %}</button>
+          <span class="olvidar"><a href="#">{% trans 'RecuperarBtn' %}</a></span>
         </div>
         <div class="container" style="background-color:#f1f1f1">
-          <button type="button" class="registrobtn" onclick="window.location.href='./Registro.html'">Registrarse</button>
+          <button type="button" class="registrobtn" onclick="window.location.href='./Registro.html'">{% trans 'RegistroBtn' %}</button>
           
         </div>
       </form>

@@ -1,10 +1,11 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>{% trans 'CatalogPagTitle' %}</title>
     <link rel="stylesheet" href="{% static 'css/Bootstrap/bootstrap.min.css' %}" >
     <script src="https://kit.fontawesome.com/f52e6fe05b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/MovieDick_Inicio.css' %}" >
@@ -24,23 +25,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
+                            <a href="#" class="nav-link">{% trans 'InicioNavbar' %}</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">Catalogo</a>
+                            <a href="#" class="nav-link">{% trans 'CatalogoNavbar' %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Categorias <span class="sr-only">(current)</span></a>            
+                            <a class="nav-link" href="#">{% trans 'CategoriasNavbar' %}<span class="sr-only">(current)</span></a>            
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Inicio de Sesión</a>
+                            <a href="#" class="nav-link">{% trans 'SesiónNavbar' %}</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control mr-sm-2" type="search" placeholder="{% trans 'SearchHolder' %}" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">{% trans 'SearchBtn' %}</button>
                     </form>
                 </div>
             </div>    
@@ -66,11 +67,11 @@
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+              <span class="sr-only">{% trans 'PreviousNav' %}</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+              <span class="sr-only">{% trans 'NextNav' %}</span>
             </a>
         </div>
         <div class="container-fluid">
@@ -78,9 +79,9 @@
                 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 productos">
                     <div id="marco-post">
-                        <h2 class="titulo"><a  title="Catálogo">Catálogo</a></h2>
+                        <h2 class="titulo"><a  title="Catálogo">{% trans 'CatalogTag' %}</a></h2>
                         <div class="post">
-                        <h4 style="text-align: center;"><span style="color: #993300;">PELÍCULAS</span></h4>
+                        <h4 style="text-align: center;"><span style="color: #993300;">{% trans 'MovieTag' %}</span></h4>
                         
                         <p><!-- |0-9     --></p>
                         <fieldset> 

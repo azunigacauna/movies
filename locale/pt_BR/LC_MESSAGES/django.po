@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-06 02:26-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/Catalogo.html:8
+msgid "CatalogPagTitle"
+msgstr "Catálogo"
+
+#: templates/Catalogo.html:28 templates/Categoria.html:30
+#: templates/Lista_Peliculas.html:30 templates/MovieDick_Inicio.html:28
+#: templates/inicio_sesion.html:29
+msgid "InicioNavbar"
+msgstr "Começar"
+
+#: templates/Catalogo.html:31 templates/Categoria.html:33
+#: templates/Lista_Peliculas.html:33 templates/MovieDick_Inicio.html:31
+#: templates/inicio_sesion.html:32
+msgid "CatalogoNavbar"
+msgstr "Catálogo"
+
+#: templates/Catalogo.html:34 templates/Categoria.html:36
+#: templates/Lista_Peliculas.html:36 templates/MovieDick_Inicio.html:34
+#: templates/inicio_sesion.html:35
+msgid "CategoriasNavbar"
+msgstr "Categorias"
+
+#: templates/Catalogo.html:37 templates/Categoria.html:39
+#: templates/Lista_Peliculas.html:39 templates/MovieDick_Inicio.html:37
+#: templates/inicio_sesion.html:38
+msgid "SesiónNavbar"
+msgstr "Iniciar sessão"
+
+#: templates/Catalogo.html:43 templates/Categoria.html:45
+#: templates/Lista_Peliculas.html:45 templates/MovieDick_Inicio.html:43
+msgid "SearchHolder"
+msgstr "Procurar"
+
+#: templates/Catalogo.html:44 templates/Categoria.html:46
+#: templates/Lista_Peliculas.html:46 templates/MovieDick_Inicio.html:44
+msgid "SearchBtn"
+msgstr "Procurar"
+
+#: templates/Catalogo.html:70 templates/Categoria.html:72
+#: templates/Categoria.html:167 templates/Lista_Peliculas.html:72
+#: templates/Lista_Peliculas.html:167 templates/MovieDick_Inicio.html:70
+#: templates/MovieDick_Inicio.html:166
+msgid "PreviousNav"
+msgstr "anterior"
+
+#: templates/Catalogo.html:74 templates/Categoria.html:76
+#: templates/Categoria.html:173 templates/Lista_Peliculas.html:76
+#: templates/Lista_Peliculas.html:173 templates/MovieDick_Inicio.html:74
+#: templates/MovieDick_Inicio.html:172
+msgid "NextNav"
+msgstr "próximo"
+
+#: templates/Catalogo.html:82
+msgid "CatalogTag"
+msgstr "Catálogo"
+
+#: templates/Catalogo.html:84
+msgid "MovieTag"
+msgstr "Filmes"
+
+#: templates/Categoria.html:8
+msgid "CategoriaPagTitle"
+msgstr "Catálogo"
+
+#: templates/Categoria.html:84 templates/Lista_Peliculas.html:84
+msgid "CategoTTag"
+msgstr "Categorias"
+
+#: templates/Categoria.html:87 templates/Lista_Peliculas.html:87
+msgid "ActionCatList"
+msgstr "Açao"
+
+#: templates/Categoria.html:91 templates/Lista_Peliculas.html:91
+msgid "AnimationCatList"
+msgstr "Animação"
+
+#: templates/Categoria.html:95 templates/Lista_Peliculas.html:95
+msgid "FantasyCatList"
+msgstr "Fantasia"
+
+#: templates/Categoria.html:99 templates/Lista_Peliculas.html:99
+msgid "MusicalsCatList"
+msgstr "Musicais"
+
+#: templates/Categoria.html:113 templates/Categoria.html:125
+#: templates/Categoria.html:137 templates/Categoria.html:149
+#: templates/Lista_Peliculas.html:113 templates/Lista_Peliculas.html:125
+#: templates/Lista_Peliculas.html:137 templates/Lista_Peliculas.html:149
+#: templates/MovieDick_Inicio.html:112 templates/MovieDick_Inicio.html:124
+#: templates/MovieDick_Inicio.html:136 templates/MovieDick_Inicio.html:148
+msgid "CategoryTag"
+msgstr "Categorias: "
+
+#: templates/Categoria.html:113 templates/Categoria.html:137
+#: templates/Categoria.html:149 templates/Lista_Peliculas.html:113
+#: templates/Lista_Peliculas.html:137 templates/Lista_Peliculas.html:149
+#: templates/MovieDick_Inicio.html:112 templates/MovieDick_Inicio.html:136
+#: templates/MovieDick_Inicio.html:148
+msgid "DramaCategoryTag"
+msgstr "Drama"
+
+#: templates/Categoria.html:113 templates/Lista_Peliculas.html:113
+#: templates/MovieDick_Inicio.html:112
+msgid "RomanceCategoryTag"
+msgstr "Romance"
+
+#: templates/Categoria.html:114 templates/Categoria.html:126
+#: templates/Categoria.html:138 templates/Categoria.html:150
+#: templates/Lista_Peliculas.html:114 templates/Lista_Peliculas.html:126
+#: templates/Lista_Peliculas.html:138 templates/Lista_Peliculas.html:150
+#: templates/MovieDick_Inicio.html:113 templates/MovieDick_Inicio.html:125
+#: templates/MovieDick_Inicio.html:137 templates/MovieDick_Inicio.html:149
+msgid "ReviewBtn"
+msgstr "Ver revisão"
+
+#: templates/Categoria.html:125 templates/Lista_Peliculas.html:125
+#: templates/MovieDick_Inicio.html:124
+msgid "ActionCategoryTag"
+msgstr "Açao"
+
+#: templates/Categoria.html:125 templates/Lista_Peliculas.html:125
+#: templates/MovieDick_Inicio.html:124
+msgid "AdventureCategoryTag"
+msgstr "Aventura"
+
+#: templates/Categoria.html:137 templates/Categoria.html:149
+#: templates/Lista_Peliculas.html:137 templates/Lista_Peliculas.html:149
+#: templates/MovieDick_Inicio.html:136 templates/MovieDick_Inicio.html:148
+msgid "CrimeCategoryTag"
+msgstr "Crime"
+
+#: templates/Lista_Peliculas.html:8
+msgid "ListPagTitle"
+msgstr "Lista"
+
+#: templates/MovieDick_Inicio.html:8
+msgid "HomePagTitle"
+msgstr "Começar"
+
+#: templates/MovieDick_Inicio.html:82
+msgid "AllList"
+msgstr "Todos os filmes"
+
+#: templates/MovieDick_Inicio.html:86
+msgid "DreadfulList"
+msgstr "Terrível"
+
+#: templates/MovieDick_Inicio.html:90
+msgid "DecentList"
+msgstr "Decentes"
+
+#: templates/MovieDick_Inicio.html:94
+msgid "GoodList"
+msgstr "Bons"
+
+#: templates/MovieDick_Inicio.html:98
+msgid "ExcellentList"
+msgstr "Excelentes"
+
+#: templates/inicio_sesion.html:8
+msgid "SesionPagTitle"
+msgstr "Iniciar sessão"
+
+#: templates/inicio_sesion.html:46
+msgid "SesionTitle"
+msgstr "Início de sessão"
+
+#: templates/inicio_sesion.html:49
+msgid "UsuarioLbl"
+msgstr "Usuário"
+
+#: templates/inicio_sesion.html:50
+msgid "UsuarioHolder"
+msgstr "entrar usuário"
+
+#: templates/inicio_sesion.html:51
+msgid "ContraseñaLbl"
+msgstr "Senha"
+
+#: templates/inicio_sesion.html:52
+msgid "ContraseñaHolder"
+msgstr "entrar senha"
+
+#: templates/inicio_sesion.html:53
+msgid "IniBtn"
+msgstr "Iniciar sessão"
+
+#: templates/inicio_sesion.html:54
+msgid "RecuperarBtn"
+msgstr "Esqueceu sua senha?"
+
+#: templates/inicio_sesion.html:57
+msgid "RegistroBtn"
+msgstr "Fazer cadastro"
