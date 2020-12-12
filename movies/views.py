@@ -19,3 +19,12 @@ def ini_sesion(request):
 
 def pagina_no_encontrada(request):
     return render(request, 'pag_no_encontrada.html')
+
+def perfil(request):
+    return render(request, 'Perfil.html')
+
+def resenia(request):
+    return render(request, 'Resenia_Pelicula.html')
+
+def registro(request):
+    return render(request, 'Registro.html')
