@@ -20,7 +20,7 @@ from . import views
 
 urlpatterns = [
 
-    path('', views.inicio, name='inicio'),
+    path('', views.chart3, name='inicio'),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     path('catalogo', views.catalogo, name='catalogo'),
     path('categoria', views.chart2, name='categoria'),
