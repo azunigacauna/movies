@@ -27,4 +27,7 @@ urlpatterns = [
     path('lista_pelicula', views.lista_pelicula, name='lista_pelicula'),
     path('inicio_sesion/', views.ini_sesion, name='ini_sesion'),
     path('pagina_no_encontrada/', views.pagina_no_encontrada, name='Page not found'),
+    path('perfil/',views.perfil, name='perfil'),
+    path('resenia_pelicula', views.resenia_pelicula, name='resenia_pelicula'),
+    path('registro', views.registro, name='registro'),
 ]
