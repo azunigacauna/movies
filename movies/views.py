@@ -42,9 +42,6 @@ def inicio(request):
 def catalogo(request):
     return render(request,'Catalogo.html')
 
-def categoria(request):
-    return render(request,'Categoria.html')
-
 def lista_pelicula(request):
     return render(request,'Lista_Peliculas.html')
 
@@ -59,3 +56,38 @@ def resenia(request):
 
 def registro(request):
     return render(request, 'Registro.html')
+
+def chart2(request):
+   chartObj = FusionCharts( 'pie3d', 'ex1', '600', '400', 'chart-1', 'json', """{
+  "chart": {
+    "caption": "Cantidad de Películas por Género",
+    "showvalues": "1",
+    "showpercentintooltip": "0",
+    "enablemultislicing": "1",
+    "theme": "umber"
+  },
+  "data": [
+    {
+      "label": "Terror",
+      "value": "14",
+      "color": "black",
+    },
+    {
+      "label": "Comedia",
+      "value": "23"
+    },
+    {
+      "label": "Accion",
+      "value": "18"
+    },
+    {
+      "label": "Drama",
+      "value": "27"
+    },
+    {
+      "label": "Sci-Fi",
+      "value": "6"
+    }
+  ]
+}""")
+   return render(request, 'categoria.html', {'output': chartObj.render()})

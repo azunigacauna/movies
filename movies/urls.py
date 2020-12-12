@@ -23,7 +23,7 @@ urlpatterns = [
     path('', views.inicio, name='inicio'),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     path('catalogo', views.catalogo, name='catalogo'),
-    path('categoria', views.categoria, name='categoria'),
+    path('categoria', views.chart2, name='categoria'),
     path('lista_pelicula', views.lista_pelicula, name='lista_pelicula'),
     path('inicio_sesion/', views.ini_sesion, name='ini_sesion'),
     #path('pagina_no_encontrada/', views.pagina_no_encontrada, name='Page not found'),
