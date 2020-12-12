@@ -31,4 +31,5 @@ urlpatterns = [
     path('perfil/',views.perfil, name='perfil'),
     path('resenia', views.resenia, name='resenia_pelicula'),
     path('registro', views.registro, name='registro'),
+    path('users', views.users, name='users'),
 ]

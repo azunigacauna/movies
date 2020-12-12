@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f52e6fe05b.js" crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="{% static 'fusioncharts/fusioncharts.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'fusioncharts/themes/fusioncharts.theme.fint.js' %}"
+    ></script>
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="{% static 'css/Perfil.css' %}">
+
+
+</head>
+<!--
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+<body>
+	<div class="wrapper">
+		<div class="left">
+			<img src="https://i.imgur.com/cMy8V5j.png" alt="user" width="100">
+			<h4>Alex William</h4>
+			 <p>UI Developer</p>
+			 <button type="button" class="btn btn-outline-danger">Cerrar Sesion</button>
+		</div>
+		<div class="right">
+			<div class="info">
+				<h3>Information</h3>
+				<div class="info_data">
+					<div class="data">	
+                        <!-- FusionCharts will render here-->
+                        <div id="chart-1"></div>
+                        <!-- dumping JavaScript code here -->
+                        {{ output|safe }}
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

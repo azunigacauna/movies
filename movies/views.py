@@ -140,4 +140,87 @@ def chart3(request):
 }""")
    return render(request, 'MovieDick_Inicio.html', {'output': chartObj.render()})
 
+def users(request):
+   chartObj = FusionCharts( 'sparkwinloss', 'ex1', '600', '400', 'chart-1', 'json', """{
+  "chart": {
+    "caption": "ACTIVIDAD DE USUARIOS",
+    "subcaption": "(2020)",
+    "charttopmargin": "10",
+    "theme": "candy"
+  },
+  "dataset": [
+    {
+      "data": [
+        {
+          "value": "L"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "W"
+        },
+        {
+          "value": "L"
+        },
+        {
+          "value": "w"
+        },
+        {
+          "value": "L"
+        }
+      ]
+    }
+  ]
+}""")
+   return render(request, 'usuarios.html', {'output': chartObj.render()})
+
 
