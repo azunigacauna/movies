@@ -91,3 +91,53 @@ def chart2(request):
   ]
 }""")
    return render(request, 'categoria.html', {'output': chartObj.render()})
+
+
+#GRAFICO DE BARRAS en pagina de inicio
+def chart3(request):
+   chartObj = FusionCharts( 'column2d', 'ex1', '500', '400', 'chart-1', 'json', """{
+  "chart": {
+    "caption": "Generos mas vistos",
+    "subcaption": "",
+    "xaxisname": "Genero",
+    "yaxisname": "vistas por mes",
+    "theme": "Candy"
+  },
+  "data": [
+    {
+      "label": "Accion",
+      "value": "290"
+    },
+    {
+      "label": "Animacion",
+      "value": "260"
+    },
+    {
+      "label": "Fantasia",
+      "value": "180"
+    },
+    {
+      "label": "Musicales",
+      "value": "140"
+    },
+    {
+      "label": "Sci-Fi",
+      "value": "115"
+    },
+    {
+      "label": "Terror",
+      "value": "100"
+    },
+    {
+      "label": "Comedia",
+      "value": "30"
+    },
+    {
+      "label": "Drama",
+      "value": "30"
+    }
+  ]
+}""")
+   return render(request, 'MovieDick_Inicio.html', {'output': chartObj.render()})
+
+
