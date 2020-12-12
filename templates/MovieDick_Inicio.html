@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="{% static 'css/Bootstrap/bootstrap.min.css' %}" >
     <script src="https://kit.fontawesome.com/f52e6fe05b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/MovieDick_Inicio.css' %}" >
+    
+    <script type="text/javascript"src="{% static 'fusioncharts/fusioncharts.js' %}" ></script>
+    <scripttype="text/javascript" src="{% static 'fusioncharts/themes/fusioncharts.theme.fint.js' %}"></script>
+    
+    
 
 </head>
 <body>
@@ -187,6 +192,12 @@
               </li>
             </ul>
           </nav>
+    </div>
+     <div class="row m-0  justify-content-center align-items-center">
+        <!-- FusionCharts will render here-->
+        <div id="chart-1"></div>
+        <!-- dumping JavaScript code here -->
+        {{ output|safe }}
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
