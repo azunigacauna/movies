@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 from fusioncharts import FusionCharts
 from pprint import pprint
-
+from collections import OrderedDict
 
 def chart(request):
     dataSource = OrderedDict()
@@ -50,9 +50,6 @@ def lista_pelicula(request):
 
 def ini_sesion(request):
     return render(request,'inicio_sesion.html')
-
-def pagina_no_encontrada(request):
-    return render(request, 'pag_no_encontrada.html')
 
 def perfil(request):
     return render(request, 'Perfil.html')

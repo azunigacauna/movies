@@ -29,6 +29,6 @@ urlpatterns = [
     #path('pagina_no_encontrada/', views.pagina_no_encontrada, name='Page not found'),
     path('pagina_no_encontrada/', views.chart, name='Page not found'),
     path('perfil/',views.perfil, name='perfil'),
-    path('resenia_pelicula', views.resenia_pelicula, name='resenia_pelicula'),
+    path('resenia', views.resenia, name='resenia_pelicula'),
     path('registro', views.registro, name='registro'),
 ]
