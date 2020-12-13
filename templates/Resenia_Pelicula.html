@@ -11,7 +11,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
+<script type="text/javascript"
+     src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js">
+</script>
+<script type="text/javascript"
+     src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js">
+</script>
 
 <link rel="stylesheet" href="{% static 'css/Resenia_Pelicula.css' %}">
 
@@ -136,11 +141,27 @@
             <hr/>
 
             <div class="row border-bottom border-muted">
+                <h4><i class="fa fa-star"></i>
+                    <b class="text-uppercase">Puntuacion general</b>
+                </h4>
+            </div> 
+            <hr/>
+
+            <div class="row m-0  justify-content-center align-items-center">
+                <h3>{{ chartTitle|safe }}</h3>
+	            <div id="chart-1">{{ output|safe }}</div>
+	            <div id="chart-2">{{ output_2|safe }}</div>
+            </div>
+
+            <hr/>
+          
+            <div class="row border-bottom border-muted">
                 <h4><i class="fa fa-play-circle"></i>
                     <b class="text-uppercase">Tráiler</b>
                 </h4>
             </div> 
             <hr/>
+          
  
             <div>
                 <p style="text-align: center;">
