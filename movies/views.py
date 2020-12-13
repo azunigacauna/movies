@@ -52,7 +52,38 @@ def perfil(request):
     return render(request, 'Perfil.html')
 
 def resenia(request):
-    return render(request, 'Resenia_Pelicula.html')
+    angularGauge = FusionCharts("angulargauge", "ex1" , "450", "270", "chart-1", "json",
+        """{
+            "chart": {
+                "caption": "Ratio de calificacion",
+                "lowerLimit": "0",
+                "upperLimit": "10",
+                "showValue": "55",
+                "theme": "fusion",
+                "showToolTip": "0"
+            },
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "5",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "5",
+                    "maxValue": "7",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "7",
+                    "maxValue": "10",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "7"
+                }]
+            }
+        }""")
+    return  render(request, 'Resenia_Pelicula.html', {'output' : angularGauge.render()})
 
 def registro(request):
     return render(request, 'Registro.html')
@@ -64,7 +95,7 @@ def chart2(request):
     "showvalues": "1",
     "showpercentintooltip": "0",
     "enablemultislicing": "1",
-    "theme": "umber"
+    "theme": "fusion"
   },
   "data": [
     {
