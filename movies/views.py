@@ -222,5 +222,35 @@ def users(request):
   ]
 }""")
    return render(request, 'usuarios.html', {'output': chartObj.render()})
-
+   
+#grafico de busquedas por mes
+def chart4(request):
+   chartObj = FusionCharts( 'column2d', 'ex1', '500', '400', 'chart-1', 'json', """{
+  "chart": {
+    "caption": "Peliculas mas buscadas",
+    "subcaption": "",
+    "xaxisname": "Pelicula",
+    "yaxisname": "busquedas por mes",
+    "theme": "Candy"
+  },
+  "data": [
+    {
+      "label": "Titanic",
+      "value": "350"
+    },
+    {
+      "label": "Mad Max: Fury Road",
+      "value": "323"
+    },
+    {
+      "label": "Pulp Fiction",
+      "value": "249"
+    },
+    {
+      "label": "El Padrino",
+      "value": "208"
+    }
+  ]
+}""")
+   return render(request, 'Catalogo.html', {'output': chartObj.render()})
 
