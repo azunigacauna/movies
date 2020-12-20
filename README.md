@@ -5,9 +5,9 @@ _Para la funcionalidad de internacionalizacion, se debe instalar GNU gettext too
 ```
 apt-get install gettext
 ```
-_y para windows se descarga desde https://www.gnu.org/software/gettext/_
+_y para windows se descarga desde https://www.gnu.org/software/gettext/
 
-_Instalación de un Entorno Virtual
+_Instalación de un Entorno Virtual //
 _Se creará una carpeta con el comando:
  _ mkdir nombre_de_la_carpeta
 _Luego se hará un virtualenv con el comando
