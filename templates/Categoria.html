@@ -17,68 +17,8 @@
 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0960e2;">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="{% static 'img/ballena.png' %}" alt="" width="100px" height="auto">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-          
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a href="http://127.0.0.1:8000/" class="nav-link">{% trans 'InicioNavbar' %}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://127.0.0.1:8000/catalogo" class="nav-link">{% trans 'CatalogoNavbar' %}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://127.0.0.1:8000/categoria">{% trans 'CategoriasNavbar' %}<span class="sr-only">(current)</span></a>            
-                        </li>
-                        <li class="nav-item">
-                            <a href="http://127.0.0.1:8000/inicio_sesion" class="nav-link">{% trans 'SesiónNavbar' %}</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="{% trans 'SearchHolder' %}" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">{% trans 'SearchBtn' %}</button>
-                    </form>
-                </div>
-            </div>    
-        </nav>
-    </header>
+    {% include 'MovieDick_Menu.html' %}
     <div class="main-content-live">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="" class="d-block w-100" alt="espacio publicitario 1">
-              </div>
-              <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="espacio publicitario 2">
-              </div>
-              <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="espacio publicitario 3">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">{% trans 'PreviousNav' %}</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">{% trans 'NextNav' %}</span>
-            </a>
-        </div>
         <div class="container-fluid">
             <div class="row my-3">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 categorias">

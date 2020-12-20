@@ -31,4 +31,6 @@ urlpatterns = [
     path('resenia', views.resenia, name='resenia_pelicula'),
     path('registro', views.registro, name='registro'),
     path('users', views.users, name='users'),
+    path('admin/', admin.site.urls),
+    path('logout', views.logout, name='logout'),
 ]

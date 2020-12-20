@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.contrib.auth.models import User, auth
+from django.contrib import messages
+from MovieDick.models import Pelicula, Lista
 
 from fusioncharts import FusionCharts
 from pprint import pprint
@@ -19,7 +22,49 @@ def lista_pelicula(request):
     return render(request,'Lista_Peliculas.html')
 
 def ini_sesion(request):
+  if request.method=='POST':
+    username = request.POST['usuario']
+    password = request.POST['contraseña']
+    user = auth.authenticate(username=username,password=password)
+    if user is not None:
+      auth.login(request, user)
+      return redirect("/")
+    else:
+      messages.info(request, 'Credenciales inválidas')
+      return redirect('/inicio_sesion')
+  else:
     return render(request,'inicio_sesion.html')
+
+def registro(request):
+  if request.method == 'POST':
+    first_name = request.POST['first_name']
+    last_name = request.POST['last_name']
+    username = request.POST['username']
+    password1 = request.POST['password1']
+    password2 = request.POST['password2']
+    email = request.POST['email']
+    if password1==password2:
+      if User.objects.filter(username=username).exists():
+        messages.info(request, 'Usuario ya existente')
+        return redirect('register')
+      elif User.objects.filter(email=email).exists():
+        messages.info(request, 'Email ya existente')
+        return redirect('register')
+      else:
+        user = User.objects.create_user(username=username,password=password1,email=email,first_name=first_name,last_name=last_name)
+        user.save();
+        print('Usuario creado')
+        return redirect('login')
+    else:
+      messages.info(request, 'Las contraseñas no coinciden')
+      return redirect('register')
+    return redirect('/')
+  else:
+    return render(request, 'Registro.html')
+
+def logout(request):
+  auth.logout(request)
+  return redirect('/')
 
 def perfil(request):
     return render(request, 'Perfil.html')
@@ -58,9 +103,6 @@ def resenia(request):
         }""")
     return  render(request, 'Resenia_Pelicula.html', {'output' : angularGauge.render()})
 
-def registro(request):
-    return render(request, 'Registro.html')
-
 def chart2(request):
    chartObj = FusionCharts( 'pie3d', 'ex1', '600', '400', 'chart-1', 'json', """{
   "chart": {
@@ -94,7 +136,7 @@ def chart2(request):
     }
   ]
 }""")
-   return render(request, 'categoria.html', {'output': chartObj.render()})
+   return render(request, 'Categoria.html', {'output': chartObj.render()})
 
 
 #GRAFICO DE BARRAS en pagina de inicio
@@ -257,4 +299,3 @@ def chart4(request):
   ]
 }""")
    return render(request, 'Catalogo.html', {'output': chartObj.render()})
-

@@ -19,41 +19,7 @@ A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themefores
 Licensed under MIT
 -->
 <body>
-	<header>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0052ce;">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="img/ballena.png" alt="" width="100px" height="auto">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-          
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Catalogo <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Categorias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Inicio de Sesión</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>    
-        </nav>
-    </header>
+	{% include 'MovieDick_Menu.html' %}
 	<div class="wrapper">
 		<div class="left">
 			<img src="https://i.imgur.com/cMy8V5j.png" alt="user" width="100">
@@ -92,7 +58,7 @@ Licensed under MIT
 		  
 			<div class="social_media">
 				<ul>	
-				  <button type="button" class="btn btn-outline-primary">Crear lista de Reproducción</button>
+				  <button type="button" class="btn btn-outline-primary" onclick="window.location.href='/registro'">Crear lista de Reproducción</button>
                   <button type="button" class="btn btn-outline-danger">Ver Listas de Reproducción</button>
 				  <button type="button" class="btn btn-outline-dark">Eliminar Listas de Reproducción</button>
 				  <button type="button" class="btn btn-outline-dark" href="users">Ver usuarios</button>
